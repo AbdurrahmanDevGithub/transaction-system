@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+  --main: #EFFAFD;
+  --text: #4A8BDF;
+  --text-two: #8FC1E3;
+  --sub: lightseagreen;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #25274D;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main);
+    width: 100%;
+    height: 12rem;
+    align-items: center;
+    box-shadow: 0 1px 4px 0 black;
+}
+.header .brand{
+    padding: 3rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--text);
+    font-family: 'MuseoModerno', sans-serif;
+}
+.header .pages{
+    margin-right: 2rem;
+}
+.header .pages a:hover {
+    color: var(--sub);
+}
+.header .pages a{
+    padding: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+
+
+
+.header .pages p{
+    font-family: 'Dancing Script';
+    color: var(--text);
+    font-size: 3rem;
+    padding: 3rem;
+}
+.main {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+
+}
+.main .sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.sub .balance{
+    border: solid var(--text-two);
+    border-radius: 1rem;
+    height: 20rem;
+    width: 80%;
+    margin: 5rem auto;
+    padding-top: 6rem;
+    box-shadow: 0 0 4px 0 var(--text-two);
+}
+.sub .balance p{
+    color: var(--text);
+    font-size: 5rem;
+    margin-top: auto;
+    text-align: center;
+}
+.sub .buttons {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sub .buttons button {
+    padding: 4rem 5rem;
+    font-size: 2.8rem;
+    background-color: var(--main);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 1px 1px 0 black;
+    margin: 2rem;
+    width: 35rem;
+    
+}
+.sub .buttons button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+}
+.sub .buttons button:hover {
+    background-color: var(--text-two);
+}
+.sub .buttons button:hover a{
+    color: white;
+}
+
+.main .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .image img{
+    width: 80%;
+    height: auto;
+}
